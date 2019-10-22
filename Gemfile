@@ -6,6 +6,8 @@ gem 'rails', '4.2.10'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
+gem 'pg', '~> 0.21'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
@@ -13,7 +15,7 @@ group :development, :test do
   gem 'capybara', '2.4.4'
   gem 'launchy'
   gem 'rspec-rails', '3.7.2'
-  gem 'ZenTest', '4.11.0'
+  gem 'ZenTest', '4.11.2'
 end
 
 group :test do
@@ -21,7 +23,7 @@ group :test do
   gem 'cucumber-rails-training-wheels'
 end
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 # Gems used only for assets and not required
